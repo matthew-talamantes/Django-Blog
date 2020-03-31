@@ -1,3 +1,7 @@
+# Signals are for running code on events from different parts of the codebase
+# In this example it is creating a Profile object when a new user is made,
+# and then saving the profile.
+
 from django.db.models.signals import post_save
 from django.contrib.auth.models import User
 from django.dispatch import receiver
